@@ -26,7 +26,7 @@ const commonOptions = {
       "@": path.resolve("__dirname", "../app/javascript/src/QCP"),
     },
   },
-  stats: "verbose",
+  // stats: "verbose",
 };
 
 const ignoreWarningsConfig = {
