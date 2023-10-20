@@ -2,13 +2,14 @@ import { Cover as CoverType } from "@/types";
 import { TickIcon } from "@components/Icon";
 import { eventDefinitions } from "@services/analytics";
 import { Accordion, Box, Flex, Text } from "@simplybusiness/mobius";
-import { Cover } from "../Cover/Cover";
-import { Tag } from "../Tag/Tag";
 import {
   formatCover,
   formatExcesses,
   transformCoverage,
 } from "@utils/transformCoverage";
+import React from "react";
+import { Cover } from "../Cover/Cover";
+import { Tag } from "../Tag/Tag";
 
 type CoverageProps = {
   covers: CoverType[];

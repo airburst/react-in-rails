@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
-import { ThemeContext } from "@simplybusiness/mobius";
+import { ErrorBoundary } from "@components/ErrorBoundary";
 import { Providers } from "@components/Providers";
 import { QuoteComparisonPage } from "@components/QuoteComparisonPage";
-import { ErrorBoundary } from "@components/ErrorBoundary";
+import { ThemeContext } from "@simplybusiness/mobius";
+import React, { useContext, useEffect } from "react";
 import { breakpoints } from "./constants";
 import { RFQ } from "./types";
 

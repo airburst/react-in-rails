@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Divider, Text, TextField } from "@simplybusiness/mobius";
 import "@simplybusiness/theme-sb";
+import React, { useState } from "react";
 
 type Props = {
-  name: string;
+  name?: string;
 };
 
 const HelloWorld = ({ name }: Props) => {

@@ -7,7 +7,7 @@ import {
 
 import { RenderOptions, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 
 const values = {
   tokens: {

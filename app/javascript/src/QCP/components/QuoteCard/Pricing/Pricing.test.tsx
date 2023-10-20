@@ -1,6 +1,7 @@
 import { Quote } from "@/types";
 import { fromPartial } from "@total-typescript/shoehorn";
 import { renderWithFeatures, screen } from "@utils/testUtils";
+import React from "react";
 import { Pricing } from "./PricingVariant";
 
 describe("Pricing", () => {

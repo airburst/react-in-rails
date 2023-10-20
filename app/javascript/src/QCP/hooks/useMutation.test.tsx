@@ -1,7 +1,7 @@
-import { renderHook, waitFor } from "@testing-library/react";
-import { ReactNode } from "react";
-import { useMutation } from "./useMutation";
 import { DataProvider } from "@contexts/DataContext";
+import { renderHook, waitFor } from "@testing-library/react";
+import React, { ReactNode } from "react";
+import { useMutation } from "./useMutation";
 
 const mockFn = jest.fn();
 
@@ -41,7 +41,7 @@ describe("useMutation hook", () => {
         // Call mutation
         await mutate();
         expect(mockOnSuccess).toHaveBeenCalledWith(apiResponse);
-      })
+      }),
     );
 
     expect(mockFn).toBeCalledTimes(1);
@@ -76,7 +76,7 @@ describe("useMutation hook", () => {
         expect(mockFn).toHaveBeenCalledTimes(1);
         expect(mockOnSuccess).toHaveBeenCalledTimes(0);
         // expect(result.current).resolves.toContain({ error: true });
-      })
+      }),
     );
   });
 });

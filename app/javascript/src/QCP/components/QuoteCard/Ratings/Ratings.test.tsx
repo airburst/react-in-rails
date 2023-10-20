@@ -1,4 +1,5 @@
 import { renderWithFeatures, screen } from "@utils/testUtils";
+import React from "react";
 import { Ratings } from "./Ratings";
 
 describe("Ratings", () => {

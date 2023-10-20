@@ -1,6 +1,7 @@
 import { RFQ } from "@/types";
 import { fromPartial } from "@total-typescript/shoehorn";
 import { render, renderWithFeatures, screen } from "@utils/testUtils";
+import React from "react";
 import { QuoteCards } from "./QuoteCards";
 
 const quoteData = fromPartial<RFQ>({

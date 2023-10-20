@@ -1,4 +1,5 @@
 import { Alert, Flex } from "@simplybusiness/mobius";
+import React from "react";
 
 export const GenericError = () => (
   <Flex justifyContent="center" alignItems="center">

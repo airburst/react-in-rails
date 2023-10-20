@@ -6,7 +6,7 @@ import { NoQuotesCard } from "@components/NoQuotesCard";
 import { Section } from "@components/Section";
 import { useBreakpoint } from "@simplybusiness/mobius";
 import clsx from "clsx";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { QuoteCard } from "../QuoteCard";
 
 type Props = {

@@ -1,6 +1,6 @@
-import { ReactNode, useState } from "react";
-import { Button, Flex, Modal } from "@simplybusiness/mobius";
 import { QuestionIcon } from "@components/Icon";
+import { Button, Flex, Modal } from "@simplybusiness/mobius";
+import React, { ReactNode, useState } from "react";
 
 type CardModalProps = {
   toggleText: string;

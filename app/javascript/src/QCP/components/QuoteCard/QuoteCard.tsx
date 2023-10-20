@@ -3,6 +3,7 @@
 import { useFeature } from "@/hooks/useFeature";
 import { PaymentPeriod, Quote } from "@/types";
 import { Text } from "@simplybusiness/mobius";
+import React from "react";
 import { QuoteActions } from "../QuoteActions";
 import { Coverage } from "./Coverage/Coverage";
 import { Header } from "./Header/Header";

@@ -1,5 +1,6 @@
 import { TagIcon } from "@components/Icon";
 import { Flex, Text } from "@simplybusiness/mobius";
+import React from "react";
 
 type TagProps = {
   text: string;

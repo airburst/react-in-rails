@@ -3,7 +3,7 @@ import { useFeature } from "@/hooks/useFeature";
 import { Ratings as RatingsType } from "@/types";
 import { eventDefinitions } from "@services/analytics";
 import { Box, Text } from "@simplybusiness/mobius";
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { CardModal } from "../CardModal/CardModal";
 
 type Props = {

@@ -1,4 +1,5 @@
 import { render, screen, userEvent } from "@utils/testUtils";
+import React from "react";
 import { QuoteActions } from "./QuoteActions";
 
 const mockFn = jest.fn((e) => e.preventDefault());

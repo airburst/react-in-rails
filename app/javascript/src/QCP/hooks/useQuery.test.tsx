@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
 import { DataProvider } from "@/contexts";
 import { renderHook, waitFor } from "@testing-library/react";
+import React, { ReactNode } from "react";
 import { useQuery } from "./useQuery";
 
 const mockFn = jest.fn();

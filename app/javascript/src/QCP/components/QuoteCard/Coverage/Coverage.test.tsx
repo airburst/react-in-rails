@@ -1,7 +1,8 @@
-import { render, screen } from "@utils/testUtils";
-import { Coverage } from "./Coverage";
-import rfq from "../../../__mocks__/quoteHiscox.json";
 import { Quote } from "@/types";
+import { render, screen } from "@utils/testUtils";
+import React from "react";
+import rfq from "../../../__mocks__/quoteHiscox.json";
+import { Coverage } from "./Coverage";
 
 // Split out named quotes from quote data
 const quotes = rfq.quotes as unknown as Quote[];

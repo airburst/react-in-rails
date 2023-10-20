@@ -2,7 +2,7 @@ import { CoverToggleProps } from "@/types";
 import { FormTokens } from "@components/FormTokens";
 import { Option, Select } from "@simplybusiness/mobius";
 import { formatAmount } from "@utils/transformCoverage";
-import { FC } from "react";
+import React, { FC } from "react";
 
 export const CoverToggle: FC<CoverToggleProps> = ({
   name,

@@ -1,3 +1,5 @@
+import React from "react";
+
 export const HeadingLine = () => (
   <svg
     width="250"

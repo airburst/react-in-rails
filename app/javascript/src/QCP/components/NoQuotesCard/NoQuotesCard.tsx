@@ -1,4 +1,5 @@
 import { Text } from "@simplybusiness/mobius";
+import React from "react";
 
 export function NoQuotesCard() {
   return (

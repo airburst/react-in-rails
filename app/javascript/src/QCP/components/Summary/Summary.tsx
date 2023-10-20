@@ -2,6 +2,7 @@ import { useFeature } from "@/hooks/useFeature";
 import { Quote } from "@/types";
 import { Section } from "@components/Section";
 import { Text } from "@simplybusiness/mobius";
+import React from "react";
 import Skeleton from "react-loading-skeleton";
 
 type Props = {

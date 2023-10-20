@@ -1,6 +1,7 @@
 import { RFQ } from "@/types";
 import { fromPartial } from "@total-typescript/shoehorn";
 import { renderWithFeatures, screen } from "@utils/testUtils";
+import React from "react";
 import { Summary } from "./Summary";
 
 const threeQuotes = fromPartial<RFQ>({

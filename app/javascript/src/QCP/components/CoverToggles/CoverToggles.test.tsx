@@ -1,5 +1,6 @@
 import { CoverToggle as CoverToggleType } from "@/types";
 import { render, screen, userEvent, within } from "@utils/testUtils";
+import React from "react";
 import { CoverToggles } from "./CoverToggles";
 
 const threeSelects: CoverToggleType[] = [
@@ -90,7 +91,7 @@ describe("CoverToggles", () => {
   it("shows nothing when props are an empty array", () => {
     const onChange = jest.fn();
     const { container } = render(
-      <CoverToggles coverToggles={[]} onChange={onChange} />
+      <CoverToggles coverToggles={[]} onChange={onChange} />,
     );
 
     expect(container.firstChild).toBeNull();
@@ -100,7 +101,7 @@ describe("CoverToggles", () => {
     const onChange = jest.fn();
     const { container } = render(
       // @ts-expect-error wrong data type to break test
-      <CoverToggles onChange={onChange} />
+      <CoverToggles onChange={onChange} />,
     );
 
     expect(container.firstChild).toBeNull();
@@ -114,15 +115,15 @@ describe("CoverToggles", () => {
       const select = screen.getByLabelText(label);
 
       expect(within(select).getByRole("option", { name: "$1M" })).toHaveValue(
-        "1000000"
+        "1000000",
       );
       expect(within(select).getByRole("option", { name: "$2M" })).toHaveValue(
-        "2000000"
+        "2000000",
       );
       expect(within(select).getByRole("option", { name: "$3M" })).toHaveValue(
-        "3000000"
+        "3000000",
       );
-    }
+    },
   );
 
   it("changing cover toggle triggers onChange", async () => {
@@ -150,14 +151,14 @@ describe("CoverToggles", () => {
       <CoverToggles
         coverToggles={togglesWithMissingOptions}
         onChange={onChange}
-      />
+      />,
     );
     const toggles = container.getElementsByTagName("select");
 
     expect(toggles.length).toBe(2);
     expect(screen.getByLabelText("General Liability")).toBeInTheDocument();
     expect(
-      screen.getByLabelText("Business Personal Property")
+      screen.getByLabelText("Business Personal Property"),
     ).toBeInTheDocument();
     expect(screen.queryByText("Identity Fraud Expense Coverage")).toBeFalsy();
   });
@@ -176,7 +177,7 @@ describe("CoverToggles", () => {
 
     const onChange = jest.fn();
     const { container } = render(
-      <CoverToggles coverToggles={badOptions} onChange={onChange} />
+      <CoverToggles coverToggles={badOptions} onChange={onChange} />,
     );
     const toggles = container.getElementsByTagName("select");
 

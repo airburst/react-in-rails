@@ -1,6 +1,6 @@
 import { eventDefinitions } from "@services/analytics";
 import { Flex } from "@simplybusiness/mobius";
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { CardModal } from "../CardModal/CardModal";
 
 export type CoverProps = {

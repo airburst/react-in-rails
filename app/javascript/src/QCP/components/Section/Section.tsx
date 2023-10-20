@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import clsx from "clsx";
+import React, { ReactNode } from "react";
 
 type Props = {
   children?: ReactNode;

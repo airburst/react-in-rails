@@ -2,6 +2,7 @@ import { useFeature } from "@/hooks/useFeature";
 import { Section } from "@components/Section";
 import { Flex } from "@simplybusiness/mobius";
 import clsx from "clsx";
+import React from "react";
 import Skeleton, { SkeletonProps, SkeletonTheme } from "react-loading-skeleton";
 
 const StyledSkeleton = (props: SkeletonProps) => (

@@ -1,5 +1,6 @@
 import { Agencies } from "@/types";
 import { render, renderWithFeatures, screen } from "@utils/testUtils";
+import React from "react";
 import { Header } from "./Header";
 
 const ORIGIN = "https://quote.simplybusiness.com";

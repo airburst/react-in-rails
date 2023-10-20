@@ -1,5 +1,6 @@
 import { useAppContext } from "@/contexts";
 import { Ratings as RatingsType } from "@/types";
+import React from "react";
 import { Ratings } from "../Ratings/Ratings";
 
 type Props = {

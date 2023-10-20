@@ -10,7 +10,7 @@ import { useAppContext } from "@contexts/AppContext";
 import { useDataContext } from "@contexts/DataContext";
 import { eventDefinitions } from "@services/analytics";
 import { AppError } from "@utils/errors/AppError";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export interface QuoteComparisonPageProps {
   initialRfq?: RFQ;

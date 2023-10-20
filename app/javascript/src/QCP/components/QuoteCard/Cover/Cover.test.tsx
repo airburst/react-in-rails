@@ -1,6 +1,7 @@
 import { eventDefinitions } from "@services/analytics";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import React from "react";
 import { Cover } from "./Cover";
 
 const EXPLAINER_TITLE_CLASS_NAME = "card-modal__explainer-title";

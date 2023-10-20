@@ -6,6 +6,7 @@ import {
   circleDollar,
 } from "@simplybusiness/icons";
 import { Flex, Icon, Text } from "@simplybusiness/mobius";
+import React from "react";
 
 type Props = {
   quote: Quote;

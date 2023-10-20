@@ -7,7 +7,7 @@ import {
 } from "@/features";
 import { isHosted, isStandalone } from "@utils/env";
 import { AppError } from "@utils/errors/AppError";
-import {
+import React, {
   createContext,
   useCallback,
   useContext,

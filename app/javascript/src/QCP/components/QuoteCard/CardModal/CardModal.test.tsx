@@ -1,4 +1,5 @@
 import { render, screen, userEvent } from "@utils/testUtils";
+import React from "react";
 import { CardModal } from "./CardModal";
 
 describe("CardModal", () => {

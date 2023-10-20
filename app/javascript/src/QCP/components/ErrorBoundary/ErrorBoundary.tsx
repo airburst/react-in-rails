@@ -1,5 +1,5 @@
-import { Component, ErrorInfo, ReactNode } from "react";
 import { airbrake } from "@services/airbrake";
+import React, { Component, ErrorInfo, ReactNode } from "react";
 import { GenericError } from "./GenericError";
 
 interface ErrorBoundaryProps {

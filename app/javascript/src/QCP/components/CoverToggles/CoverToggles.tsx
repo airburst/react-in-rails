@@ -8,7 +8,7 @@ import { PaymentToggle } from "@components/PaymentToggle";
 import { Section } from "@components/Section";
 import { eventDefinitions } from "@services/analytics";
 import { Accordion, useBreakpoint } from "@simplybusiness/mobius";
-import { Dispatch, FC, SetStateAction } from "react";
+import React, { Dispatch, FC, SetStateAction } from "react";
 import { CoverToggle } from "./CoverToggle";
 
 type Props = {

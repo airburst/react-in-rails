@@ -1,7 +1,7 @@
 import { PaymentPeriod } from "@/types";
 import { eventDefinitions } from "@services/analytics";
 import clsx from "clsx";
-import { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 type Props = {
   paymentPeriod: PaymentPeriod;

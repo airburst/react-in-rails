@@ -1,5 +1,6 @@
 import { Quote } from "@/types";
 import { Flex, Text } from "@simplybusiness/mobius";
+import React from "react";
 
 type Props = {
   quote: Quote;
