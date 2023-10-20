@@ -1,0 +1,389 @@
+// Copying here until Icon support shadow roots
+svg:not(:root).svg-inline--mobius-icon, svg:not(:host).svg-inline--mobius-icon {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--mobius-icon {
+  display: var(--mobius-icon-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--mobius-icon.mobius-icon-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--mobius-icon.mobius-icon-xs {
+  vertical-align: 0em;
+}
+.svg-inline--mobius-icon.mobius-icon-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--mobius-icon.mobius-icon-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--mobius-icon.mobius-icon-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--mobius-icon.mobius-icon-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--mobius-icon.mobius-icon-pull-left {
+  margin-right: var(--mobius-icon-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--mobius-icon.mobius-icon-pull-right {
+  margin-left: var(--mobius-icon-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--mobius-icon.mobius-icon-li {
+  width: var(--mobius-icon-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--mobius-icon.mobius-icon-fw {
+  width: var(--mobius-icon-fw-width, 1.25em);
+}
+
+.mobius-icon-layers svg.svg-inline--mobius-icon {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobius-icon-layers-counter, .mobius-icon-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.mobius-icon-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.mobius-icon-layers svg.svg-inline--mobius-icon {
+  transform-origin: center center;
+}
+
+.mobius-icon-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.mobius-icon-layers-counter {
+  background-color: var(--mobius-icon-counter-background-color, #ff253a);
+  border-radius: var(--mobius-icon-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--mobius-icon-inverse, #fff);
+  line-height: var(--mobius-icon-counter-line-height, 1);
+  max-width: var(--mobius-icon-counter-max-width, 5em);
+  min-width: var(--mobius-icon-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--mobius-icon-counter-padding, 0.25em 0.5em);
+  right: var(--mobius-icon-right, 0);
+  text-overflow: ellipsis;
+  top: var(--mobius-icon-top, 0);
+  transform: scale(var(--mobius-icon-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.mobius-icon-layers-bottom-right {
+  bottom: var(--mobius-icon-bottom, 0);
+  right: var(--mobius-icon-right, 0);
+  top: auto;
+  transform: scale(var(--mobius-icon-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.mobius-icon-layers-bottom-left {
+  bottom: var(--mobius-icon-bottom, 0);
+  left: var(--mobius-icon-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--mobius-icon-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.mobius-icon-layers-top-right {
+  top: var(--mobius-icon-top, 0);
+  right: var(--mobius-icon-right, 0);
+  transform: scale(var(--mobius-icon-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.mobius-icon-layers-top-left {
+  left: var(--mobius-icon-left, 0);
+  right: auto;
+  top: var(--mobius-icon-top, 0);
+  transform: scale(var(--mobius-icon-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.mobius-icon-1x {
+  font-size: 1em;
+}
+
+.mobius-icon-2x {
+  font-size: 2em;
+}
+
+.mobius-icon-3x {
+  font-size: 3em;
+}
+
+.mobius-icon-4x {
+  font-size: 4em;
+}
+
+.mobius-icon-5x {
+  font-size: 5em;
+}
+
+.mobius-icon-6x {
+  font-size: 6em;
+}
+
+.mobius-icon-7x {
+  font-size: 7em;
+}
+
+.mobius-icon-8x {
+  font-size: 8em;
+}
+
+.mobius-icon-9x {
+  font-size: 9em;
+}
+
+.mobius-icon-10x {
+  font-size: 10em;
+}
+
+.mobius-icon-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.mobius-icon-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.mobius-icon-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.mobius-icon-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.mobius-icon-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.mobius-icon-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.mobius-icon-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.mobius-icon-ul {
+  list-style-type: none;
+  margin-left: var(--mobius-icon-li-margin, 2.5em);
+  padding-left: 0;
+}
+.mobius-icon-ul > li {
+  position: relative;
+}
+
+.mobius-icon-li {
+  left: calc(var(--mobius-icon-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--mobius-icon-li-width, 2em);
+  line-height: inherit;
+}
+
+.mobius-icon-border {
+  border-color: var(--mobius-icon-border-color, #eee);
+  border-radius: var(--mobius-icon-border-radius, 0.1em);
+  border-style: var(--mobius-icon-border-style, solid);
+  border-width: var(--mobius-icon-border-width, 0.08em);
+  padding: var(--mobius-icon-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.mobius-icon-pull-left {
+  float: left;
+  margin-right: var(--mobius-icon-pull-margin, 0.3em);
+}
+
+.mobius-icon-pull-right {
+  float: right;
+  margin-left: var(--mobius-icon-pull-margin, 0.3em);
+}
+
+.mobius-icon-spin {
+  animation-name: mobius-icon-spin;
+  animation-delay: var(--mobius-icon-animation-delay, 0s);
+  animation-direction: var(--mobius-icon-animation-direction, normal);
+  animation-duration: var(--mobius-icon-animation-duration, 2s);
+  animation-iteration-count: var(--mobius-icon-animation-iteration-count, infinite);
+  animation-timing-function: var(--mobius-icon-animation-timing, linear);
+}
+
+.mobius-icon-spin-reverse {
+  --mobius-icon-animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+.mobius-icon-spin {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes mobius-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mobius-icon-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.mobius-icon-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.mobius-icon-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.mobius-icon-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.mobius-icon-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.mobius-icon-flip-both,
+.mobius-icon-flip-horizontal.mobius-icon-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.mobius-icon-rotate-by {
+  transform: rotate(var(--mobius-icon-rotate-angle, none));
+}
+
+.mobius-icon-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.mobius-icon-stack-1x,
+.mobius-icon-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--mobius-icon-stack-z-index, auto);
+}
+
+.svg-inline--mobius-icon.mobius-icon-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--mobius-icon.mobius-icon-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.mobius-icon-inverse {
+  color: var(--mobius-icon-inverse, #fff);
+}
+
+.sr-only,
+.mobius-icon-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.mobius-icon-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--mobius-icon .mobius-icon-primary {
+  fill: var(--mobius-icon-primary-color, currentColor);
+  opacity: var(--mobius-icon-primary-opacity, 1);
+}
+
+.svg-inline--mobius-icon .mobius-icon-secondary {
+  fill: var(--mobius-icon-secondary-color, currentColor);
+  opacity: var(--mobius-icon-secondary-opacity, 0.4);
+}
+
+.svg-inline--mobius-icon.mobius-icon-swap-opacity .mobius-icon-primary {
+  opacity: var(--mobius-icon-secondary-opacity, 0.4);
+}
+
+.svg-inline--mobius-icon.mobius-icon-swap-opacity .mobius-icon-secondary {
+  opacity: var(--mobius-icon-primary-opacity, 1);
+}
+
+.svg-inline--mobius-icon mask .mobius-icon-primary,
+.svg-inline--mobius-icon mask .mobius-icon-secondary {
+  fill: black;
+}
+
+.fad.mobius-icon-inverse,
+.mobius-icon-duotone.mobius-icon-inverse {
+  color: var(--mobius-icon-inverse, #fff);
+}

@@ -1,0 +1,56 @@
+.header__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
+  position: relative;
+  grid-area: header;
+}
+
+// Fix for gap in iOS 14
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .header__provider-logo {
+    margin-bottom: var(--size-10);
+  }
+
+  .ratings__container {
+    margin-top: var(--size-10);
+  }
+}
+
+.header__provider-logo {
+  max-width: 144px;
+  max-height: 40px;
+  object-fit: contain;
+  object-position: left;
+}
+
+// Grid rule lines
+.header__container::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-neutral-200);
+}
+
+@media (min-width: 850px) and (max-width: 1023px) {
+  .header__container::after {
+    bottom: auto;
+    top: 0;
+    right: -24px;
+    width: 1px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 850px) {
+  .quote-cards__vertical .header__container::after {
+    bottom: auto;
+    top: 0;
+    right: -24px;
+    width: 1px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.pricing__container {
+  position: relative;
+  display: flex;
+  grid-area: pricing;
+  flex-direction: column;
+  width: 100%;
+}
+
+p.pricing__primary-amount.p {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pricing__total-amount {
+  font-weight: var(--font-weight-bold);
+  text-align: right;
+  line-height: 120%;
+}
+
+.pricing__amount-due {
+  color: var(--color-text-medium);
+  margin-top: 0;
+  margin-bottom: var(--size-10);
+  line-height: 150%;
+}
+
+.pricing__total > .caption {
+  line-height: 150%;
+}
+
+// Fix for gap in iOS 14
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .pricing__primary-amount,
+  .pricing__total-amount {
+    margin-right: var(--size-10);
+  }
+}

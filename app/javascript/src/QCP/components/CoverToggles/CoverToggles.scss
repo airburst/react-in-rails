@@ -1,0 +1,67 @@
+.cover-toggles__grid {
+  --column-count: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  list-style-type: none;
+  column-gap: var(--size-30);
+}
+
+.cover-toggles__grid--default {
+  padding-top: 10px;
+  margin-top: var(--size-20);
+  margin-bottom: var(--size-30);
+  border-top: 2px dotted var(--color-neutral-300);
+  border-bottom: 2px dotted var(--color-neutral-300);
+
+  @media (min-width: 850px) {
+    --column-count: 2;
+  }
+}
+
+.cover-toggles__grid--experimental {
+  padding-top: var(--size-30);
+
+  @media (min-width: 850px) {
+    --column-count: 3;
+  }
+}
+
+.mobius\/SelectOuter {
+  margin-bottom: 12px;
+  padding: 0 2px; /* allow space for focus ring */
+}
+
+.cover-toggle__click-sink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cover-toggles__container {
+  .mobius\/AccordionLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobius\/AccordionLink .mobius\/Icon {
+    --transition-duration: 500ms;
+    transition: var(--transition-duration);
+  }
+
+  .mobius\/AccordionLink.hide .mobius\/Icon {
+    transform: rotate(-180deg);
+  }
+
+  .mobius\/AccordionLinkText {
+    order: -1;
+    margin-left: 0;
+    margin-right: var(--size-20);
+  }
+
+  .mobius\/AccordionContent {
+    margin-top: var(--size-10);
+    margin-bottom: 0;
+  }
+}

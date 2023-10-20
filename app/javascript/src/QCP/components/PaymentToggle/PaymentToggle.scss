@@ -1,0 +1,64 @@
+:root,
+:host {
+  --duration: 0.15s;
+}
+
+.payment-toggle__button {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  border: var(--size-border-width) solid var(--color-primary);
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.payment-toggle__text {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: calc(var(--size-20) - 1px);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-100);
+  -webkit-transition: color var(--duration) ease-in-out;
+  -moz-transition: color var(--duration) ease-in-out;
+  -o-transition: color var(--duration) ease-in-out;
+  transition: color var(--duration) ease-in-out;
+}
+
+.payment-toggle__text.yearly {
+  color: var(--color-primary);
+}
+
+.payment-toggle__button--is-toggled {
+  .payment-toggle__text.monthly {
+    color: var(--color-primary);
+  }
+  .payment-toggle__text.yearly {
+    color: var(--color-neutral-100);
+  }
+}
+
+.payment-toggle__slider {
+  position: absolute;
+  z-index: -1;
+  width: 55%;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+  transform: translateX(2px);
+  -webkit-transition: all var(--duration) ease-in-out;
+  -moz-transition: all var(--duration) ease-in-out;
+  -o-transition: all var(--duration) ease-in-out;
+  transition: all var(--duration) ease-in-out;
+}
+
+.payment-toggle__button--is-toggled .payment-toggle__slider {
+  transform: translate(81px); /* magic, empirical numbers */
+  width: 42%;
+}

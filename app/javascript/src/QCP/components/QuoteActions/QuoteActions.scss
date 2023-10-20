@@ -1,0 +1,21 @@
+.quote-actions__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: actions;
+}
+
+.quote-actions__button-wrapper {
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    :not(:last-child) {
+      margin-right: var(--size-30);
+    }
+  }
+}
+
+.quote-actions__button {
+  flex: 1 1 0;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+}

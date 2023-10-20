@@ -1,0 +1,31 @@
+.section {
+  position: relative;
+  padding: 0 var(--size-30);
+  font-size: var(--font-size-3);
+}
+
+.section--light {
+  background-color: var(--background-color-light);
+}
+
+.section--dark {
+  /* TODO: add --color-azure-100 to Mobius */
+  background-color: #0e0a2b;
+}
+
+.section__inner-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cannot use var(--max-page-width) in media query */
+@media (min-width: 600px) {
+  .section__inner-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-page-width);
+  }
+}
