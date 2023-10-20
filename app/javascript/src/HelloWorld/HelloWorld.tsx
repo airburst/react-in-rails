@@ -1,4 +1,4 @@
-import React, { useState, FC } from "react";
+import { useState, FC } from "react";
 import { Divider, Text, TextField } from "@simplybusiness/mobius";
 import "@simplybusiness/theme-sb";
 
