@@ -1,11 +1,16 @@
 {
   "name": "app",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "./bin/dev"
+  },
   "dependencies": {
     "@babel/core": "7",
     "@babel/plugin-transform-runtime": "7",
     "@babel/preset-env": "7",
     "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
     "@babel/runtime": "7",
     "@types/babel__core": "7",
     "@types/webpack": "5",
@@ -23,12 +28,18 @@
     "shakapacker": "7.1.0",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "5",
+    "typescript": "^5.2.2",
     "webpack": "5",
     "webpack-assets-manifest": "5",
     "webpack-cli": "4",
     "webpack-merge": "5"
   },
-  "version": "0.1.0",
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "fork-ts-checker-webpack-plugin": "^9.0.0",
+    "react-refresh": "^0.14.0",
+    "webpack-dev-server": "4"
+  },
   "babel": {
     "presets": [
       "./node_modules/shakapacker/package/babel/preset.js"
@@ -36,10 +47,5 @@
   },
   "browserslist": [
     "defaults"
-  ],
-  "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
-    "react-refresh": "^0.14.0",
-    "webpack-dev-server": "4"
-  }
+  ]
 }
