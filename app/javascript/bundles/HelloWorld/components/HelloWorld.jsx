@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import style from './HelloWorld.module.css';
 
-const HelloWorld = (props) => {
+const HelloWorld = (props, railsContext) => {
+  console.log("🚀 ~ file: HelloWorld.jsx:6 ~ HelloWorld ~ railsContext:", railsContext)
   const [name, setName] = useState(props.name);
 
   return (
