@@ -1,0 +1,26 @@
+.ratings__text {
+  margin: 0;
+  color: var(--color-text-medium);
+}
+
+.ratings__body {
+  margin: 0;
+}
+
+.ratings__rating {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+}
+
+.ratings__container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-30);
+}
+
+@media (min-width: 850px) {
+  .quote-cards__vertical .ratings__container {
+    flex-direction: column;
+    gap: 0;
+  }
+}

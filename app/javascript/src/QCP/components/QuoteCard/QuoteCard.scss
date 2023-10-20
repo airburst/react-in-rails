@@ -1,0 +1,70 @@
+:host {
+  --logo-section-width: 160px;
+}
+
+.quote-card__container {
+  margin: 0;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--radius-2);
+  background-color: var(--color-neutral-100);
+}
+
+@mixin quote-card-wide-card {
+  display: grid;
+  grid-template-areas:
+    "header information pricing"
+    "header information actions";
+  grid-template-columns: var(--logo-section-width) 1fr 1fr;
+  gap: 49px;
+  padding: var(--size-50);
+}
+
+.quote-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: var(--size-50) var(--size-30);
+  font-size: var(--font-size-3);
+  grid-template-rows: auto auto;
+  height: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: 850px) and (max-width: 1023px) {
+    @include quote-card-wide-card();
+  }
+
+  @media (min-width: 850px) {
+    .quote-cards__vertical & {
+      @include quote-card-wide-card();
+    }
+  }
+
+  // Fix for gap in iOS 14
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    > *:not(:last-child) {
+      margin-bottom: 33px;
+    }
+  }
+}
+
+@mixin no-quote-card-wide-card {
+  display: grid;
+  grid-template-areas: "header information";
+  grid-template-columns: var(--logo-section-width) 1fr;
+  gap: 49px;
+  padding: var(--size-50);
+}
+
+.quote-card__no-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: var(--size-30);
+  font-size: var(--font-size-3);
+
+  @media (min-width: 850px) {
+    .quote-cards__vertical & {
+      @include no-quote-card-wide-card();
+    }
+  }
+}

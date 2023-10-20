@@ -1,0 +1,29 @@
+.quote-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-20);
+  margin-block-start: var(--size-20);
+
+  // Fix for gap in iOS 14
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    &:not(:last-child) {
+      margin-bottom: var(--size-20);
+      margin-right: var(--size-20);
+    }
+  }
+}
+
+.quote-card-badge {
+  padding: var(--size-20);
+  background-color: var(--color-azure-200);
+  border-radius: var(--radius-1);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-tight);
+}
+
+.quote-card-badge__icon {
+  display: inline-block;
+  margin-right: var(--size-20);
+  color: var(--color-bubblegum-500);
+  width: 1em; // TODO: Should come from Icon component
+}

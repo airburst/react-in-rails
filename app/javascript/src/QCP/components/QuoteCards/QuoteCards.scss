@@ -1,0 +1,25 @@
+.quote-cards__grid {
+  --column-count: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  gap: var(--size-30);
+  margin-top: var(--size-30);
+  padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: var(--size-50);
+
+  @media screen and (min-width: 1024px) {
+    &:not(.quote-cards__vertical) {
+      --column-count: 3;
+    }
+  }
+}
+
+.quote-cards__title {
+  margin: 0;
+  margin-top: var(--size-30);
+  font-size: var(--font-size-4);
+  font-weight: 600;
+  line-height: 120%;
+}

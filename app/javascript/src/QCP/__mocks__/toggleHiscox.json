@@ -1,0 +1,169 @@
+{
+  "success": true,
+  "journeyToken": "9806c71e261adbc0f70fb5be7f1eb2c8",
+  "authenticityToken": "HNGXj_dtnhbIrPiHeiD-qqjwFXqJZCMrpJFERa5D2WAjHOVPCOkLiUWmS7F_XOrUY19l-J3AGa2flsB6rH2duw",
+  "rfqId": "64b677c442eb1709a29ea29c",
+  "quotes": [
+    {
+      "id": "64db80a142eb1754f3d834b7",
+      "status": "quoted",
+      "premium": "$1,252.00",
+      "installmentsAvailable": true,
+      "downpaymentAmount": "$313.00",
+      "installmentsAmount": "$93.90",
+      "installmentsCount": "10",
+      "ariaLabelText": "Excesses for your quote from 64db80a142eb1754f3d834b7",
+      "covers": [
+        {
+          "displayName": "General Liability",
+          "coverName": "General liability",
+          "displayLimit": "$2,000,000",
+          "covered": true,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$0",
+          "displayAlways": false,
+          "insurerSpecificName": "Each Occurrence Limit",
+          "quoteDetailsDisplayLimits": [
+            "Occurrence Limit: $2,000,000",
+            "Aggregate Limit: $2,000,000"
+          ],
+          "extraCover": false,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [
+            {
+              "id": "64db80a242eb1754f3d8356a",
+              "name": "Aggregate gl limit",
+              "value": "2000000",
+              "displayValue": "$2,000,000",
+              "covers": ["General liability"],
+              "quoteComparisonDisplayLimit": "$2M / Aggregate",
+              "quoteDetailsDisplayLimit": "Aggregate Limit: $2,000,000",
+              "businessUnit": "simplybusiness_us"
+            }
+          ],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        },
+        {
+          "displayName": "Business Personal Property",
+          "coverName": "Supplemental business property and equipment",
+          "displayLimit": "Not included",
+          "covered": false,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$500",
+          "displayAlways": false,
+          "insurerSpecificName": "Supplemental Business Personal Property Floater Coverage Limit",
+          "quoteDetailsDisplayLimits": ["Occurrence Limit: $0"],
+          "extraCover": false,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        },
+        {
+          "displayName": "Premises Rented To You",
+          "coverName": "Premises rented to you",
+          "displayLimit": "$100,000",
+          "covered": true,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$0",
+          "displayAlways": false,
+          "insurerSpecificName": "",
+          "quoteDetailsDisplayLimits": [],
+          "extraCover": true,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        },
+        {
+          "displayName": "Medical Expenses",
+          "coverName": "Medical expenses",
+          "displayLimit": "$5,000",
+          "covered": true,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$0",
+          "displayAlways": false,
+          "insurerSpecificName": "",
+          "quoteDetailsDisplayLimits": [],
+          "extraCover": true,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        },
+        {
+          "displayName": "Personal \u0026 Advertising Injury",
+          "coverName": "Personal and advertising injury",
+          "displayLimit": "$2,000,000",
+          "covered": true,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$0",
+          "displayAlways": false,
+          "insurerSpecificName": "",
+          "quoteDetailsDisplayLimits": [],
+          "extraCover": true,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        },
+        {
+          "displayName": "Products/Completed Operations Limit",
+          "coverName": "Prod ops agg limit",
+          "displayLimit": "Subject to General Aggregate Limit",
+          "covered": true,
+          "excessTitle": "Deductible",
+          "specificExcesses": {},
+          "indemnityPeriod": "",
+          "displayExcess": "$0",
+          "displayAlways": false,
+          "insurerSpecificName": "Products/Completed Operations Aggregate Limit",
+          "quoteDetailsDisplayLimits": [],
+          "extraCover": true,
+          "coverInsurer": "Hiscox",
+          "additionalLimits": [],
+          "optional": false,
+          "triaPremium": "",
+          "triaRequested": false
+        }
+      ],
+      "insurerLogo": "/assets/logos/insurers/hiscox-89c006ebc95a2be96f24fd24371cd128b430c086d917e8d4296e520331c8b8f2.png",
+      "insurerNameParametrized": "hiscox",
+      "ratings": {
+        "reinsurerText": "Backed by Munich Re*",
+        "ratingBody": "*A.M. Best Rating",
+        "rating": "A+ (Superior)",
+        "ratingType": "ambest"
+      }
+    }
+  ],
+  "coverTogglesData": [
+    {
+      "field_name": "general_liability",
+      "question_text": "General Liability",
+      "value": "2000000",
+      "info": "Provides coverage against third-party claims and lawsuits, such as bodily injury or property damage",
+      "starts_from": "0",
+      "options": {
+        "$1,000,000": "1000000",
+        "$2,000,000": "2000000"
+      }
+    }
+  ]
+}

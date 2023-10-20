@@ -1,0 +1,61 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "17.0.2"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "react/require-default-props": 0,
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "dot-notation": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "no-use-before-define": 0,
+    "no-undef": 0,
+    "react/jsx-uses-react": 2,
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-nested-ternary": "off",
+    "no-unused-vars": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "app/javascript/src/**/*.test.ts",
+        "app/javascript/src/**/*.test.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    },
+    {
+      "files": ["*.tsx", "*.ts", ".js"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}

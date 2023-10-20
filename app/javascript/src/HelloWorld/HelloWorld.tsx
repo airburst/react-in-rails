@@ -1,12 +1,12 @@
-import React, { useState, FC } from "react";
 import { Divider, Text, TextField } from "@simplybusiness/mobius";
 import "@simplybusiness/theme-sb";
+import React, { useState } from "react";
 
-type HelloProps = {
-  name: string;
+type Props = {
+  name?: string;
 };
 
-const HelloWorld: FC<HelloProps> = ({ name }: HelloProps) => {
+const HelloWorld = ({ name }: Props) => {
   const [_name, setName] = useState(name);
 
   const handleChange = (value: string) => {

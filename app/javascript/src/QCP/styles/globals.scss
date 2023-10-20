@@ -1,0 +1,61 @@
+:root {
+  --max-page-width: 1024px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  background-color: var(--color-background);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body > div:first-of-type {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 0;
+}
+
+// Fix for iPad (iOS 14) full width, single column layout
+.wrapper {
+  width: 100%;
+}
+
+// Mobius overrides
+.mobius\/ModalHeader {
+  padding: var(--size-30);
+  font-size: var(--font-size-4);
+  line-height: 150%;
+}
+
+.mobius\/ModalContent {
+  font-size: var(--font-size-2);
+  line-height: 120%;
+}
+
+.mobius\/Label {
+  font-size: var(--font-size-2);
+}
+
+/* Fix for React Loading Skeleton:
+The skeleton width is 0 when the parent has display: flex! */
+.flex-1 {
+  flex: 1;
+  width: calc(100vw - 96px);
+}
+
+@media (min-width: 850px) {
+  .flex-1 {
+    width: 280px;
+  }
+}

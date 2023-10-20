@@ -1,0 +1,115 @@
+.coverage__container {
+  flex-grow: 1;
+  position: relative;
+  grid-area: information;
+  // Fix for gap in iOS 14
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    .coverage__cover:not(:last-child) {
+      margin-bottom: var(--size-30);
+    }
+  }
+}
+
+// Grid rule lines
+.coverage__container::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-neutral-200);
+}
+
+@media (min-width: 850px) and (max-width: 1023px) {
+  .coverage__container::after {
+    bottom: auto;
+    top: 0;
+    right: -24px;
+    width: 1px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 850px) {
+  .quote-cards__vertical .coverage__container::after {
+    bottom: auto;
+    top: 0;
+    right: -24px;
+    width: 1px;
+    height: 100%;
+  }
+}
+
+.coverage__tick-icon {
+  margin-top: 2px;
+  width: var(--size-30);
+  color: var(--color-valid);
+  margin-right: var(--size-20);
+}
+
+.coverage__title {
+  margin: 0;
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+  line-height: 150%;
+}
+
+.coverage__cover-item {
+  font-size: var(--font-size-2);
+}
+
+.coverage__list-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: var(--font-size-1);
+  line-height: 120%;
+  color: var(--color-neutral-500);
+}
+
+.coverage__cover {
+  .mobius\/Accordion {
+    align-items: flex-start;
+    margin-top: var(--size-20);
+    margin-bottom: var(--size-10);
+    // Full width content
+    div[aria-hidden] {
+      width: 100%;
+    }
+  }
+
+  .mobius\/AccordionLink {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    // margin: calc((var(--size-20) - var(--size-border-width)) * -1);
+    // padding: calc(var(--size-20) - var(--size-border-width));
+    border-radius: var(--radius-1);
+  }
+
+  .mobius\/AccordionLink .mobius\/Icon {
+    --transition-duration: 500ms;
+    transition: var(--transition-duration);
+  }
+
+  .mobius\/AccordionLink.hide .mobius\/Icon {
+    transform: rotate(-180deg);
+  }
+
+  .mobius\/AccordionLinkText {
+    order: -1;
+    margin-left: 0;
+    margin-right: var(--size-20);
+  }
+
+  .mobius\/AccordionContent {
+    margin-top: var(--size-10);
+    margin-bottom: 0;
+
+    .cover__container:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

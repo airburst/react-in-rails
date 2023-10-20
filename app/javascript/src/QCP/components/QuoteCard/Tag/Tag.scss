@@ -1,0 +1,13 @@
+.tag__container {
+  padding-top: var(--size-30);
+  border-top: 1px solid var(--color-neutral-200);
+
+  .mobius.caption {
+    margin: 0;
+    line-height: 150%;
+  }
+
+  svg {
+    margin-right: var(--size-10);
+  }
+}

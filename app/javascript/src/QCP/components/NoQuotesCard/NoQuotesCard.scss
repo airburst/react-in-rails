@@ -1,0 +1,28 @@
+.no-quotes-card__container {
+  margin: 0;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--radius-2);
+  overflow: hidden;
+  background-color: var(--color-neutral-100);
+  margin-block: size(var(--size-30));
+  margin-block-end: var(--size-60);
+}
+
+.no-quotes-card__body {
+  padding: var(--size-50);
+  padding-inline-start: 80px;
+  // TODO: Relative imports are broken, must be relative to src/styles
+  //       Fix with webpack plugin
+  background-image: url("../components/NoQuotesCard/no-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 38px;
+  background-size: 30px;
+}
+
+// Roll on margin-trim
+.no-quotes-card__body :first-child {
+  margin-block-start: 0;
+}
+.no-quotes-card__body :last-child {
+  margin-block-end: 0;
+}

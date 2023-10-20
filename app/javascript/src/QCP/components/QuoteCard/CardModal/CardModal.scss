@@ -1,0 +1,49 @@
+.card-modal__trigger {
+  border: none;
+  padding: 0;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-2);
+  color: var(--color-neutral-700);
+  background-color: transparent;
+}
+
+.card-modal__explainer-title {
+  // Note: iOS 14 ignores `text-decoration: underline dotted;`
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 6px;
+  margin-bottom: 6px;
+}
+
+.card-modal__info-icon {
+  width: 12px;
+  margin-left: var(--size-10);
+}
+
+.card-modal__container {
+  width: calc(100% - (var(--size-50) * 2));
+  max-width: 290px;
+  border-radius: 12px;
+
+  .mobius\/ModalHeader {
+    padding-bottom: var(--size-20);
+    align-items: flex-start;
+    line-height: 150%;
+
+    button {
+      padding: 4px;
+      scale: 150%;
+      translate: 4px -4px;
+    }
+  }
+
+  .mobius\/ModalContent {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  .card-modal__container {
+    max-width: 468px;
+  }
+}
