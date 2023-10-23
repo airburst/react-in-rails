@@ -5,6 +5,7 @@ import { ThemeContext } from "@simplybusiness/mobius";
 import "@simplybusiness/theme-sb";
 import React, { useContext, useEffect } from "react";
 import { breakpoints } from "./constants";
+import "./styles/index.scss";
 import { RFQ } from "./types";
 
 export type AppProps = {

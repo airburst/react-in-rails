@@ -61,6 +61,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "mini-css-extract-plugin": "^2.7.6",
     "react-refresh": "^0.14.0",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
     "shakapacker": "7.1.0",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "5",
